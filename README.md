@@ -44,3 +44,7 @@ MVC stands for Model, View, and Controller. MVC is basically a design pattern to
 6\. The **/views** folder contains files that are basically the html of the site. What the user sees.
 
 For every controller file, there is a view folder that contains the html for the webpage.
+
+### To use this MVC Framework
+1\. Change config file variables 
+2\. Change the main directory .htaccess file rewrite path
