@@ -21,9 +21,9 @@ MVC stands for Model, View, and Controller. MVC is basically a design pattern to
   * **Public directory** - this .htaccess file is important for the MVC framework to work. This file directs the whole webpage through index.php in a query saved as a variable to be used by the MVC in PHP.
   eg. $1 is the PHP variable in index.php?url=**$1**.
 
-2.\  The MVC framework is contained in the app directory. In the app directory, there is a config folder than contains the constant variables for the database, names, and paths. The important main folders however are the /models, /views, /controllers, and /libraries. The MVC is required and initiated through /public/index.php.
+2\.  The MVC framework is contained in the app directory. In the app directory, there is a config folder than contains the constant variables for the database, names, and paths. The important main folders however are the /models, /views, /controllers, and /libraries. The MVC is required and initiated through /public/index.php.
 
-3.\  The **/libraries** folder contains 3 files; Core.php, Controller.php, and Database.php. These files are basically the brain of the MVC. It is what makes the MVC function; it is the base of the MVC. These files are capitalized because in them are classes which is named the same as the filename, and are also capitalized.
+3\.  The **/libraries** folder contains 3 files; Core.php, Controller.php, and Database.php. These files are basically the brain of the MVC. It is what makes the MVC function; it is the base of the MVC. These files are capitalized because in them are classes which is named the same as the filename, and are also capitalized.
   * **Core.php** - This file is the start of the MVC. it is initiated in public/index.php. This MVC has the url format of /controller/method/parameters. The Core class set default values for the controller, method, and parameters so that when a user inputs an unknown directory, the default is ran. In this case, it would be "Pages". The Core class:
     - gets the url, sanitizes it to remove unwanted characters, and saves it in an array.
     - then it checks to see if the first url path/value(controller), exists in the app/controllers. That's why it is capitalized. If that controller does NOT exist, the default "Pages" is chosen instead for the $currentController. If it does exist, that first url path/value(controller) becomes the $currentController. Then the url[0] is unset and the controller file in /app/controllers which contains a Class that has the same name as its filename is then required and instantiated.
@@ -35,12 +35,12 @@ MVC stands for Model, View, and Controller. MVC is basically a design pattern to
     - The view method receives the destination or filename and data to be displayed, checks if that destination or filename exists, if so, it requires it which will be displayed on the screen.
   * **Database.php** - This file connects to the database using PDO. This database class is instantiated and used in /app/models.
 
-4.\ The **/controllers** folder contains 1 file named Pages.php which is the default controller.
+4\. The **/controllers** folder contains 1 file named Pages.php which is the default controller.
   * Pages.php contains a Page class that extends the base Controller class in /app/libraries which allows it access to the modal and view through the modal and view methods.
   * Pages.php takes data from the database with modal to the view, by using the controller methods.
 
-5.\ The **/modals** folder contains files that sends instructions to the database to retrieve or manipulate data.
+5\. The **/modals** folder contains files that sends instructions to the database to retrieve or manipulate data.
 
-6.\ The **/views** folder contains files that are basically the html of the site. What the user sees.
+6\. The **/views** folder contains files that are basically the html of the site. What the user sees.
 
 For every controller file, there is a view folder that contains the html for the webpage.
