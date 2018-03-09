@@ -47,4 +47,5 @@ For every controller file, there is a view folder that contains the html for the
 
 ### To use this MVC Framework
 1\. Change config file variables 
+
 2\. Change the main directory .htaccess file rewrite path
