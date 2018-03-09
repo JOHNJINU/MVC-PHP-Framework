@@ -13,7 +13,7 @@ MVC stands for Model, View, and Controller. MVC is basically a design pattern to
 
 ### How does this framework work?
 
-1.\  The url is controlled by the .htaccess files. There are 3 .htaccess files; one in the main directory; one in the app directory; one in the public directory.
+1\.  The url is controlled by the .htaccess files. There are 3 .htaccess files; one in the main directory; one in the app directory; one in the public directory.
   * **Main directory** - this .htaccess file rewrites the main url toward the public directory.
   eg. normally to access the webpage, the user would have to go to domain/public/index.php.
   This .htaccess file makes it so that domain/public/index.php is equal to just domain.
