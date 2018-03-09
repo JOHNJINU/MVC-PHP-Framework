@@ -49,3 +49,5 @@ For every controller file, there is a view folder that contains the html for the
 1\. Change config file variables 
 
 2\. Change the main directory .htaccess file rewrite path
+
+3\. models files must be singular, eg. Post.php
